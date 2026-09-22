@@ -10,32 +10,67 @@
          <font>
             <Font name="Palatino Linotype Bold" size="36.0" />
          </font></Label>
-      <MenuBar fx:id="mnuPrincipal" layoutY="1.0" prefHeight="31.0" prefWidth="743.0">
-        <menus>
-          <Menu fx:id="mnuInicio" mnemonicParsing="false" text="Inicio">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
-            </items>
-          </Menu>
-          <Menu fx:id="mnuRegistros" mnemonicParsing="false" text="Registros">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Delete" />
-            </items>
-          </Menu>
-          <Menu fx:id="mnuConsultas" mnemonicParsing="false" text="Consultas">
-            <items>
-              <MenuItem mnemonicParsing="false" text="About" />
-            </items>
-          </Menu>
-        </menus>
+       <MenuBar fx:id="mnbPrincipal" prefHeight="25.0" prefWidth="746.0">
+
+           <menus>
+
+               <Menu fx:id="mnuInicio" text="Inicio">
+
+                   <items>
+
+                       <MenuItem onAction="#regresarInicio" text="Inicio" />
+
+                   </items>
+
+               </Menu>
+
+
+               <Menu fx:id="mnuRegistros" text="Registros">
+
+                   <items>
+
+                       <MenuItem onAction="#abrirRegistroCliente" text="Registrar Cliente" />
+
+                   </items>
+
+               </Menu>
+
+
+               <Menu fx:id="mnuConsultas" text="Consultas">
+
+                   <items>
+
+                       <MenuItem onAction="#abrirConsultaClientes" text="Consultar Clientes" />
+
+                   </items>
+
+               </Menu>
+
+           </menus>
+
       </MenuBar>
-      <Button fx:id="btnRegistrarCliente" layoutX="178.0" layoutY="203.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="166.0" style="-fx-background-color: #475569;" text="Registrar Cliente" textFill="WHITE" />
-      <Button fx:id="btnConsultaCliente" layoutX="408.0" layoutY="203.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="166.0" style="-fx-background-color: #475569;" text="Consulta de Clientes" textFill="WHITE" />
+      <Button fx:id="btnRegistrarCliente" layoutX="178.0" layoutY="203.0" mnemonicParsing="false" onAction="#abrirRegistroCliente" prefHeight="45.0" prefWidth="166.0" style="-fx-background-color: #475569;" text="Registrar Cliente" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font></Button>
+      <Button fx:id="btnConsultaClientes" layoutX="408.0" layoutY="203.0" mnemonicParsing="false" onAction="#abrirConsultaClientes" prefHeight="45.0" prefWidth="166.0" style="-fx-background-color: #475569;" text="Consulta de Clientes" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font></Button>
       <ToolBar layoutY="399.0" prefHeight="40.0" prefWidth="746.0" style="-fx-background-color: #475569;">
         <items>
-            <Button fx:id="btnSolicitudes" layoutX="10.0" layoutY="13.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #49;" text="Solicitudes" />
-            <Button fx:id="btnConsultas" layoutX="66.0" layoutY="13.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: #49;" text="Consultas" />
-            <Button fx:id="btnSalir" layoutX="66.0" layoutY="13.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Salir" />
+            <Button fx:id="btnSolicitudes" layoutX="10.0" layoutY="13.0" mnemonicParsing="false" onAction="#abrirRegistroCliente" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: #49;" text="Solicitudes">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font></Button>
+            <Button fx:id="btnConsultas" layoutX="66.0" layoutY="13.0" mnemonicParsing="false" onAction="#abrirConsultaClientes" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: #49;" text="Consultas">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font></Button>
+            <Button fx:id="btnSalir" layoutX="66.0" layoutY="13.0" mnemonicParsing="false" onAction="#salir" prefHeight="25.0" prefWidth="110.0" text="Salir">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font></Button>
         </items>
       </ToolBar>
    </children>
