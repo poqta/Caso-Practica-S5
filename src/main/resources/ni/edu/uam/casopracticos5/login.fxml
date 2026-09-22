@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F1F5F9;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F1F5F9;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ni.edu.uam.casopracticos5.LoginController">
    <children>
       <Label layoutX="168.0" layoutY="41.0" text="Inicio de Sesión" textFill="#1e293b">
          <font>
@@ -18,20 +18,20 @@
                   <Font name="Times New Roman" size="14.0" />
                </font>
             </Label>
-            <TextField promptText="Ingrese su usuario" />
+            <TextField fx:id="txtUsuario" promptText="Ingrese su usuario" />
             <Label prefHeight="34.0" prefWidth="80.0" text="Contraseña" textFill="#334155">
                <font>
                   <Font name="Times New Roman" size="14.0" />
                </font>
             </Label>
-            <PasswordField promptText="Ingrese su contraseña" />
+            <PasswordField fx:id="pwdContrasena" promptText="Ingrese su contraseña" />
          </children>
       </VBox>
-      <Button layoutX="155.0" layoutY="236.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="279.0" style="-fx-background-color: #475569;" text="Iniciar Sesión" textFill="WHITE">
+      <Button fx:id="btnIniciarSesion" layoutX="155.0" layoutY="236.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="279.0" style="-fx-background-color: #475569;" text="Iniciar Sesión" textFill="WHITE">
          <font>
             <Font name="Times New Roman" size="13.0" />
          </font></Button>
-      <Button layoutX="155.0" layoutY="283.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="279.0" text="Salir">
+      <Button fx:id="btnSalir" layoutX="155.0" layoutY="283.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="279.0" text="Salir">
          <font>
             <Font name="Times New Roman" size="13.0" />
          </font></Button>

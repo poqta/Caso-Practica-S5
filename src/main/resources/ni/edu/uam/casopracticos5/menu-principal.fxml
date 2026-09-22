@@ -4,38 +4,38 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="panelPrincipal" prefHeight="439.0" prefWidth="745.0" style="-fx-background-color: #F1F5F9;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ni.edu.uam.casopracticos5.MenuController">
+<AnchorPane fx:id="panelPrincipal" prefHeight="439.0" prefWidth="745.0" style="-fx-background-color: #F1F5F9;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ni.edu.uam.casopracticos5.MenuPrincipalController">
    <children>
       <Label layoutX="244.0" layoutY="129.0" text="Menu principal">
          <font>
             <Font name="Palatino Linotype Bold" size="36.0" />
          </font></Label>
-      <MenuBar layoutY="1.0" prefHeight="31.0" prefWidth="743.0">
+      <MenuBar fx:id="mnuPrincipal" layoutY="1.0" prefHeight="31.0" prefWidth="743.0">
         <menus>
-          <Menu mnemonicParsing="false" text="Inicio">
+          <Menu fx:id="mnuInicio" mnemonicParsing="false" text="Inicio">
             <items>
               <MenuItem mnemonicParsing="false" text="Close" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Registros">
+          <Menu fx:id="mnuRegistros" mnemonicParsing="false" text="Registros">
             <items>
               <MenuItem mnemonicParsing="false" text="Delete" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Consultas">
+          <Menu fx:id="mnuConsultas" mnemonicParsing="false" text="Consultas">
             <items>
               <MenuItem mnemonicParsing="false" text="About" />
             </items>
           </Menu>
         </menus>
       </MenuBar>
-      <Button layoutX="178.0" layoutY="203.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="166.0" style="-fx-background-color: #475569;" text="Registrar Cliente" textFill="WHITE" />
-      <Button layoutX="408.0" layoutY="203.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="166.0" style="-fx-background-color: #475569;" text="Consulta de Clientes" textFill="WHITE" />
+      <Button fx:id="btnRegistrarCliente" layoutX="178.0" layoutY="203.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="166.0" style="-fx-background-color: #475569;" text="Registrar Cliente" textFill="WHITE" />
+      <Button fx:id="btnConsultaCliente" layoutX="408.0" layoutY="203.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="166.0" style="-fx-background-color: #475569;" text="Consulta de Clientes" textFill="WHITE" />
       <ToolBar layoutY="399.0" prefHeight="40.0" prefWidth="746.0" style="-fx-background-color: #475569;">
         <items>
-            <Button layoutX="10.0" layoutY="13.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #49;" text="Solicitudes" />
-            <Button layoutX="66.0" layoutY="13.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: #49;" text="Consultas" />
-            <Button layoutX="66.0" layoutY="13.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Salir" />
+            <Button fx:id="btnSolicitudes" layoutX="10.0" layoutY="13.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #49;" text="Solicitudes" />
+            <Button fx:id="btnConsultas" layoutX="66.0" layoutY="13.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: #49;" text="Consultas" />
+            <Button fx:id="btnSalir" layoutX="66.0" layoutY="13.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Salir" />
         </items>
       </ToolBar>
    </children>
